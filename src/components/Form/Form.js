@@ -8,8 +8,8 @@ import styles from "./Form.module.css"
 function Form({add,edit,currentResident,setCurrentResident,setForm}) {
   const [name, setName] = useState("")
   const [age, setAge] = useState("")
-
-  let {propertyname:property}=useParams;
+   const params=useParams();
+  let property=params.propertyname;
 
   useEffect(() => {
       if(currentResident){
