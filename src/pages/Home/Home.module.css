@@ -7,4 +7,11 @@
     background-color: white;
     padding: 10px 20px;
     margin-bottom: 15px;
+    border-radius: 10px;
+    border-left: #e66465 5px solid;
+    box-shadow:rgba(60,64,67,0.3) 0px 1px 2px 0px, rgba(60,64,67,0.15) 0px 1px 3px 1px;
+}
+
+.container h1{
+    margin:20px 0px 15px 0px;
 }

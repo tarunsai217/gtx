@@ -37,7 +37,8 @@ function Form({add,edit,currentResident,setCurrentResident,setForm}) {
 }
 
     return (
-        <form class={styles.form}  onSubmit={(e)=>submitHandler(e)}>
+        <form className={styles.form}  onSubmit={(e)=>submitHandler(e)}>
+           <button onClick={()=>{setForm(false)}} className={styles.close}>Close</button> 
           <h2>Add resident</h2>
           <label>Name</label>
           <input 
@@ -49,7 +50,7 @@ function Form({add,edit,currentResident,setCurrentResident,setForm}) {
            value={age}
            onChange={(e)=>{setAge(e.target.value)}}
           />
-          <button type="submit">Submit</button>
+          <button type="submit">{currentResident?"Submit":"Add"}</button>
         </form>
     )
 }

@@ -1,6 +1,7 @@
 import { ADD_RESIDENT,REMOVE_RESIDENT,EDIT_RESIDENT, SET_FORM, SET_CURRENTRESIDENT } from "./types";
 
 const initialState={
+properties:[{name:"property1"},{name:"property2"}],    
 residents:[{id:1,name:'Sai',age:'27',property:'property1'},{id:2,name:'Baram',age:'22',property:'property2'},{id:3,name:'farukh',age:'45',property:'property1'},{id:4,name:'Suhaas',age:'68',property:'property2'}],
 showForm:false,
 currentResident:null
